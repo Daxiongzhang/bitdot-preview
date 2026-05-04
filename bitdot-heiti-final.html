@@ -123,38 +123,11 @@
             height: 100vh;
             min-height: 100dvh;
             background: #000;
+            border-radius: 0;
             overflow: hidden;
             position: relative;
             border: none;
             margin: 0 auto;
-        }
-        
-        /* 桌面端居中模拟手机效果 */
-        @media (min-width: 768px) {
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                padding: 40px 20px;
-                background: #1a1a1a;
-                min-height: 100vh;
-            }
-            .ios-frame {
-                height: 812px;
-                border-radius: 44px;
-                box-shadow:
-                    0 0 0 1px var(--border-thin),
-                    var(--shadow-modal);
-                flex-shrink: 0;
-            }
-        }
-
-        .notch {
-            display: none;
-        }
-
-        .home-bar {
-            display: none;
         }
 
         .page-content {
@@ -1700,9 +1673,6 @@
 <body>
     
     <div class="ios-frame">
-        <div class="notch"></div>
-        <div class="home-bar"></div>
-        
         <div class="page-content" id="pageContent">
             
             <!-- Language Button -->
