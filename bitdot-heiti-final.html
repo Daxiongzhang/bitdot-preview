@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>BITDOT PROTOCOL</title>
     <style>
 
@@ -142,7 +142,7 @@
             .ios-frame {
                 height: 812px;
                 border-radius: 44px;
-                box-shadow: 
+                box-shadow:
                     0 0 0 1px var(--border-thin),
                     var(--shadow-modal);
                 flex-shrink: 0;
@@ -150,35 +150,11 @@
         }
 
         .notch {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 160px;
-            height: 32px;
-            background: var(--bg-card-hover);
-            border-radius: 0 0 22px 22px;
-            z-index: 1000;
             display: none;
         }
 
         .home-bar {
-            position: absolute;
-            bottom: 8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 140px;
-            height: 5px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 3px;
-            z-index: 1000;
             display: none;
-        }
-        
-        /* 桌面端显示模拟刘海和底部条 */
-        @media (min-width: 768px) {
-            .notch { display: block; }
-            .home-bar { display: block; }
         }
 
         .page-content {
@@ -188,7 +164,6 @@
             overflow-x: hidden;
             background: #000;
             position: relative;
-            padding-bottom: env(safe-area-inset-bottom, 0);
         }
         .page-content::-webkit-scrollbar { display: none; }
 
@@ -197,12 +172,6 @@
         .lang-btn {
             position: absolute;
             top: 16px;
-        }
-        @supports (padding: env(safe-area-inset-top)) {
-            @media (max-width: 767px) {
-                .lang-btn { top: calc(env(safe-area-inset-top) + 6px); }
-            }
-        }
             right: 16px;
             display: flex;
             align-items: center;
@@ -234,15 +203,6 @@
             background: var(--color-primary-ultra-subtle);
             margin-top: 52px;
         }
-        @media (min-width: 768px) {
-            .protocol-badge { margin-top: 52px; }
-        }
-        @supports (padding: env(safe-area-inset-top)) {
-            @media (max-width: 767px) {
-                .protocol-badge { margin-top: calc(env(safe-area-inset-top) + 16px); }
-            }
-        }
-        }
         .protocol-badge .dot {
             width: 6px;
             height: 6px;
@@ -269,12 +229,6 @@
             font-weight: var(--weight-semibold);
             text-align: center;
             margin-top: 24px;
-        }
-        @supports (padding: env(safe-area-inset-top)) {
-            @media (max-width: 767px) {
-                .main-title { margin-top: calc(env(safe-area-inset-top) - 20px); }
-            }
-        }
             line-height: 1.1;
             letter-spacing: -0.03em;
             font-family: -apple-system, 'SF Pro Display', 'PingFang SC', sans-serif;
