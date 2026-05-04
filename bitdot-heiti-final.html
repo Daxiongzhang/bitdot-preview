@@ -1512,8 +1512,8 @@
             
             <!-- Mode Tabs -->
             <div class="mode-tabs">
-                <button class="mode-tab active" id="tabStatic" onclick="switchMode('static')">静态模式</button>
-                <button class="mode-tab inactive" id="tabDynamic" onclick="switchMode('dynamic')">动态模式</button>
+                <button class="mode-tab active" id="tabStatic" onclick="switchMode('static')"><span data-i18n="tab_static">静态模式</span></button>
+                <button class="mode-tab inactive" id="tabDynamic" onclick="switchMode('dynamic')"><span data-i18n="tab_dynamic">动态模式</span></button>
             </div>
             
             <!-- ===== STATIC MODE CONTENT ===== -->
@@ -1524,7 +1524,7 @@
                     <div class="section-header">
                         <div class="section-num">01</div>
                         <div>
-                            <div class="section-title">从你开始</div>
+                            <div class="section-title" data-i18n="s01_title">从你开始</div>
                             <div class="section-subtitle">STARTS WITH YOU</div>
                         </div>
                     </div>
@@ -1533,9 +1533,9 @@
                     <div class="step-card">
                         <div class="step-num"><span>1</span></div>
                         <div class="step-content">
-                            <div class="step-title">注册绑定</div>
-                            <div class="step-desc">完成注册绑定，立即领取空投奖励</div>
-                            <div class="step-badge lime">1000 DP 空投</div>
+                            <div class="step-title" data-i18n="step1_title">注册绑定</div>
+                            <div class="step-desc" data-i18n="step1_desc">完成注册绑定，立即领取空投奖励</div>
+                            <div class="step-badge lime" data-i18n="step1_badge">1000 DP 空投</div>
                         </div>
                         <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
@@ -1544,9 +1544,9 @@
                     <div class="step-card">
                         <div class="step-num"><span>2</span></div>
                         <div class="step-content">
-                            <div class="step-title">每日 1U 铸币</div>
-                            <div class="step-desc">每日投入 1U 进行铸币，当日双重产出</div>
-                            <div class="step-badge lime">14 WGU + 5 DP / 天</div>
+                            <div class="step-title" data-i18n="step2_title">每日 1U 铸币</div>
+                            <div class="step-desc" data-i18n="step2_desc">每日投入 1U 进行铸币，当日双重产出</div>
+                            <div class="step-badge lime" data-i18n="step2_badge">14 WGU + 5 DP / 天</div>
                         </div>
                         <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
@@ -1555,9 +1555,9 @@
                     <div class="step-card">
                         <div class="step-num"><span>3</span></div>
                         <div class="step-content">
-                            <div class="step-title">连续 35 天养成 · 释放加成达 3%</div>
-                            <div class="step-desc">可以选择提币随时闪兑 USDT</div>
-                            <div class="step-badge blue">随时提现 USDT</div>
+                            <div class="step-title" data-i18n="step3_title">连续 35 天养成 · 释放加成达 3%</div>
+                            <div class="step-desc" data-i18n="step3_desc">可以选择提币随时闪兑 USDT</div>
+                            <div class="step-badge blue" data-i18n="step3_badge">随时提现 USDT</div>
                         </div>
                         <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
@@ -1568,7 +1568,7 @@
                     <div class="section-header">
                         <div class="section-num">02</div>
                         <div>
-                            <div class="section-title">铸币数据</div>
+                            <div class="section-title" data-i18n="s02_title">铸币数据</div>
                             <div class="section-subtitle">REGISTER & BIND</div>
                         </div>
                     </div>
@@ -1576,11 +1576,11 @@
                     <!-- Data Cards -->
                     <div class="data-grid-2">
                         <div class="data-card">
-                            <div class="data-card-label">35天 周期累计</div>
+                            <div class="data-card-label" data-i18n="data_label1">35天 周期累计</div>
                             <div class="data-card-value lime">490 WGU</div>
                         </div>
                         <div class="data-card">
-                            <div class="data-card-label">释放规则</div>
+                            <div class="data-card-label" data-i18n="data_label2">释放规则</div>
                             <div class="data-card-value lime">1%~3%/天</div>
                         </div>
                     </div>
@@ -1588,71 +1588,71 @@
                     <!-- Progress -->
                     <div class="progress-section">
                         <div class="progress-header">
-                            <span class="progress-label">35天 养成周期</span>
-                            <span class="progress-value">35 / 35 天</span>
+                            <span class="progress-label" data-i18n="progress_label">35天 养成周期</span>
+                            <span class="progress-value" data-i18n="progress_value">35 / 35 天</span>
                         </div>
                         <div class="progress-bar">
                             <div class="progress-bar-fill lime" style="width: 100%;"></div>
                         </div>
-                        <div class="progress-desc">可以选择提币随时闪兑 USDT</div>
+                        <div class="progress-desc" data-i18n="progress_desc">可以选择提币随时闪兑 USDT</div>
                     </div>
                     
                     <!-- Action Buttons -->
                     <div class="action-grid-3">
-                        <button class="action-btn green">闪兑 WANT</button>
-                        <button class="action-btn orange">换 DP</button>
-                        <button class="action-btn blue">组 LP</button>
+                        <button class="action-btn green" data-i18n="btn_swap_want">闪兑 WANT</button>
+                        <button class="action-btn orange" data-i18n="btn_swap_dp">换 DP</button>
+                        <button class="action-btn blue" data-i18n="btn_lp">组 LP</button>
                     </div>
                     <div class="action-grid-3">
-                        <button class="action-btn purple">闪兑 USDT</button>
+                        <button class="action-btn purple" data-i18n="btn_swap_usdt">闪兑 USDT</button>
                         <button class="action-btn green">C2C</button>
-                        <button class="action-btn red">U卡手续费</button>
+                        <button class="action-btn red" data-i18n="btn_ucard">U卡手续费</button>
                     </div>
                 </div>
                 
                 <!-- Output Data Section -->
                 <div class="section output-section">
-                    <div class="output-title">核心产出数据</div>
+                    <div class="output-title" data-i18n="output_title">核心产出数据</div>
                     
                     <div class="output-grid-3">
                         <div class="output-card">
                             <div class="output-card-value lime">14</div>
-                            <div class="output-card-label">WGU/天</div>
+                            <div class="output-card-label" data-i18n="out_label1">WGU/天</div>
                         </div>
                         <div class="output-card">
                             <div class="output-card-value lime">490</div>
-                            <div class="output-card-label">WGU/35天</div>
+                            <div class="output-card-label" data-i18n="out_label2">WGU/35天</div>
                         </div>
                         <div class="output-card">
                             <div class="output-card-value blue">3%</div>
-                            <div class="output-card-label">每日释放</div>
+                            <div class="output-card-label" data-i18n="out_label3">每日释放</div>
                         </div>
                     </div>
                     
                     <!-- Data Table -->
                     <div class="data-table">
                         <div class="table-header">
-                            <span>项目养成数据</span>
-                            <span>数据</span>
+                            <span data-i18n="table_header">项目养成数据</span>
+                            <span data-i18n="table_header_data">数据</span>
                         </div>
                         <div class="table-row">
-                            <span class="table-row-label">每日铸币</span>
+                            <span class="table-row-label" data-i18n="row_mint">每日铸币</span>
                             <span class="table-row-value white">1U</span>
                         </div>
                         <div class="table-row">
-                            <span class="table-row-label">每日产出</span>
+                            <span class="table-row-label" data-i18n="row_output">每日产出</span>
                             <span class="table-row-value lime">14 WGU</span>
                         </div>
                         <div class="table-row">
-                            <span class="table-row-label">35天 周期累计</span>
+                            <span class="table-row-label" data-i18n="row_total">35天 周期累计</span>
                             <span class="table-row-value lime">490 WGU</span>
                         </div>
                         <div class="table-row">
-                            <span class="table-row-label">释放规则</span>
+                            <span class="table-row-label" data-i18n="row_release">释放规则</span>
                             <span class="table-row-value yellow">3%/Day</span>
                         </div>
                         <div class="table-row">
-                            <span class="table-row-label">用途</span>
+                            <span class="table-row-label" data-i18n="row_usage">用途</span>
                             <span class="table-row-value yellow">WANT / USDT / DP / LP / C2C...</span>
                         </div>
                     </div>
@@ -1663,12 +1663,12 @@
                     <div class="section-header">
                         <div class="section-num">03</div>
                         <div>
-                            <div class="section-title">1推10静/动态模型</div>
+                            <div class="section-title" data-i18n="s03_title">1推10静/动态模型</div>
                             <div class="section-subtitle">REFERRAL STARTER MODEL</div>
                         </div>
                     </div>
                     
-                    <div class="matrix-desc">十十复制 1U 铸币逻辑</div>
+                    <div class="matrix-desc" data-i18n="matrix_desc">十十复制 1U 铸币逻辑</div>
                     
                     <!-- Matrix Card -->
                     <div class="matrix-card">
@@ -1676,7 +1676,7 @@
                             <div class="matrix-left">
                                 <div class="matrix-ref">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                    <span>直推</span>
+                                    <span data-i18n="direct_ref">直推</span>
                                 </div>
                             </div>
                             <div class="matrix-right">
@@ -1694,23 +1694,23 @@
                     <div class="reward-card">
                         <div class="reward-card-left">
                             <svg class="reward-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                            <span class="reward-card-label">直推奖励</span>
+                            <span class="reward-card-label" data-i18n="reward_direct">直推奖励</span>
                         </div>
                         <span class="reward-card-value yellow">1.54 WGU × 10 × 35</span>
                     </div>
-                    
+
                     <div class="reward-card">
                         <div class="reward-card-left">
                             <svg class="reward-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                            <span class="reward-card-label">自己铸币累计</span>
+                            <span class="reward-card-label" data-i18n="reward_self">自己铸币累计</span>
                         </div>
                         <span class="reward-card-value white">14 WGU × 35</span>
                     </div>
-                    
+
                     <div class="reward-card">
                         <div class="reward-card-left">
                             <svg class="reward-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-                            <span class="reward-card-label">收益结构</span>
+                            <span class="reward-card-label" data-i18n="reward_structure">收益结构</span>
                         </div>
                         <span class="reward-card-value lime">直推+自铸=1029WGU</span>
                     </div>
@@ -1721,7 +1721,7 @@
                     <div class="section-header">
                         <div class="section-num">04</div>
                         <div>
-                            <div class="section-title">权益说明</div>
+                            <div class="section-title" data-i18n="s04_title">权益说明</div>
                             <div class="section-subtitle">TOKEN UTILITIES</div>
                         </div>
                     </div>
@@ -1729,27 +1729,27 @@
                     <div class="rights-card">
                         <div class="rights-card-header">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                            <span class="rights-card-title">直接闪兑</span>
+                            <span class="rights-card-title" data-i18n="right_swap">直接闪兑</span>
                         </div>
                         <div class="rights-progress">
                             <div class="rights-progress-fill lime"></div>
                         </div>
                     </div>
-                    
+
                     <div class="rights-card">
                         <div class="rights-card-header">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
-                            <span class="rights-card-title">通缩销毁机制</span>
+                            <span class="rights-card-title" data-i18n="right_burn">通缩销毁机制</span>
                         </div>
-                        <div class="rights-card-desc">总量持续减少，供应长期收紧</div>
+                        <div class="rights-card-desc" data-i18n="right_burn_desc">总量持续减少，供应长期收紧</div>
                     </div>
-                    
+
                     <div class="rights-card">
                         <div class="rights-card-header">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                            <span class="rights-card-title">参与全网分红</span>
+                            <span class="rights-card-title" data-i18n="right_dividend">参与全网分红</span>
                         </div>
-                        <div class="rights-card-desc">全网 Gas 收益按比例分配给 DP 持有者</div>
+                        <div class="rights-card-desc" data-i18n="right_dividend_desc">全网 Gas 收益按比例分配给 DP 持有者</div>
                     </div>
                 </div>
             </div>
@@ -1762,34 +1762,34 @@
                     <div class="section-header">
                         <div class="section-num">01</div>
                         <div>
-                            <div class="section-title">怎么玩？三步上手</div>
+                            <div class="section-title" data-i18n="d_s01_title">怎么玩？三步上手</div>
                             <div class="section-subtitle">GET STARTED · THREE STEPS</div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-num"><span>1</span></div>
                         <div class="step-content">
-                            <div class="step-title">每日 1U 铸币</div>
-                            <div class="step-desc">获得 14 WGU + 5 DP，连续加成叠加</div>
-                            <div class="step-badge lime">14 WGU + 5 DP / 天</div>
+                            <div class="step-title" data-i18n="d_step1_title">每日 1U 铸币</div>
+                            <div class="step-desc" data-i18n="d_step1_desc">获得 14 WGU + 5 DP，连续加成叠加</div>
+                            <div class="step-badge lime" data-i18n="d_step1_badge">14 WGU + 5 DP / 天</div>
                         </div>
                         <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
                     <div class="step-card">
                         <div class="step-num"><span>2</span></div>
                         <div class="step-content">
-                            <div class="step-title">邀请裂变</div>
-                            <div class="step-desc">直推 11%，逐级 55% 递减</div>
-                            <div class="step-badge blue">无限深度</div>
+                            <div class="step-title" data-i18n="d_step2_title">邀请裂变</div>
+                            <div class="step-desc" data-i18n="d_step2_desc">直推 11%，逐级 55% 递减</div>
+                            <div class="step-badge blue" data-i18n="d_step2_badge">无限深度</div>
                         </div>
                         <svg class="step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
                     <div class="step-card">
                         <div class="step-num"><span>3</span></div>
                         <div class="step-content">
-                            <div class="step-title">持有 DP 享 Gas 分红</div>
-                            <div class="step-desc">DP 总量固定，Gas 费永久分配</div>
-                            <div class="step-badge blue">开启财富新篇章</div>
+                            <div class="step-title" data-i18n="d_step3_title">持有 DP 享 Gas 分红</div>
+                            <div class="step-desc" data-i18n="d_step3_desc">DP 总量固定，Gas 费永久分配</div>
+                            <div class="step-badge blue" data-i18n="d_step3_badge">开启财富新篇章</div>
                         </div>
                     </div>
                 </div>
@@ -1799,7 +1799,7 @@
                     <div class="section-header">
                         <div class="section-num">02</div>
                         <div>
-                            <div class="section-title">铸币引擎</div>
+                            <div class="section-title" data-i18n="d_s02_title">铸币引擎</div>
                             <div class="section-subtitle">ENGINE · I/O</div>
                         </div>
                     </div>
@@ -1807,7 +1807,7 @@
                         <div class="io-left">
                             <span class="io-label">INPUT</span>
                             <span class="io-value" style="font-weight:700">1 USDT</span>
-                            <span class="io-sub" style="color:var(--text-secondary);">+ Gas 费</span>
+                            <span class="io-sub" style="color:var(--text-secondary);" data-i18n="io_gas">+ Gas 费</span>
                         </div>
                         <div class="io-divider">
                             <div class="io-arrow">
@@ -1826,37 +1826,37 @@
                     <div class="bonus-list">
                         <div class="bonus-row">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                            <span class="bonus-row-label">连续铸币</span>
+                            <span class="bonus-row-label" data-i18n="bonus_consecutive">连续铸币</span>
                             <div class="bonus-bar-bg"><div class="bonus-bar-fill lime" style="width:66%"></div></div>
                             <span class="bonus-value lime">2%</span>
                         </div>
                         <div class="bonus-row">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00b0ff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                            <span class="bonus-row-label">动态推广</span>
+                            <span class="bonus-row-label" data-i18n="bonus_referral">动态推广</span>
                             <div class="bonus-bar-bg"><div class="bonus-bar-fill blue" style="width:66%"></div></div>
                             <span class="bonus-value blue">+2%</span>
                         </div>
                         <div class="bonus-row">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                            <span class="bonus-row-label">封顶线</span>
+                            <span class="bonus-row-label" data-i18n="bonus_cap">封顶线</span>
                             <div class="bonus-bar-bg" style="border:1px dashed rgba(255,204,0,0.25)"><div class="bonus-bar-fill yellow" style="width:100%"></div></div>
                             <span class="bonus-value yellow">3%</span>
                         </div>
                         <div class="bonus-row">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-                            <span class="bonus-row-label">断签惩罚</span>
+                            <span class="bonus-row-label" data-i18n="bonus_penalty">断签惩罚</span>
                             <div class="bonus-bar-bg"><div class="bonus-bar-fill red" style="width:13%"></div></div>
                             <span class="bonus-value red">-0.4%</span>
                         </div>
                     </div>
                     <div class="chart-section">
                         <div class="chart-header">
-                            <span style="color:#fff;font-size:13px;font-weight:600;">净收益增长</span>
+                            <span style="color:#fff;font-size:13px;font-weight:600;" data-i18n="chart_net_yield">净收益增长</span>
                             <span style="color:var(--text-secondary);font-size:10px;letter-spacing:1px;">USDT / DAY</span>
                         </div>
                         <div class="chart-prereq">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                            <span style="color:#ffcc00;font-size:10px;">基于 10×10 复制填满 1,110 活跃地址</span>
+                            <span style="color:#ffcc00;font-size:10px;" data-i18n="chart_prereq">基于 10×10 复制填满 1,110 活跃地址</span>
                         </div>
                         <div class="chart-canvas">
                             <div class="chart-grid-line" style="top:0"></div>
@@ -1876,10 +1876,10 @@
                             <span class="chart-tag lime" style="position:absolute;right:0;top:2px">~55</span>
                         </div>
                         <div class="chart-days">
-                            <span>30天</span>
-                            <span>40天</span>
-                            <span>60天</span>
-                            <span>90天</span>
+                            <span data-i18n="chart_day30">30天</span>
+                            <span data-i18n="chart_day40">40天</span>
+                            <span data-i18n="chart_day60">60天</span>
+                            <span data-i18n="chart_day90">90天</span>
                         </div>
                     </div>
                 </div>
@@ -1897,27 +1897,27 @@
                     <div style="margin-bottom:8px">
                         <div style="text-align:center;margin-bottom:8px">
                             <div style="font-size:22px;margin-bottom:6px">🔗</div>
-                            <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:4px">直推越多，代数越深，收益无上限</div>
-                            <div style="color:#ff4444;font-size:11px;font-weight:600">铸币成本：1 USDT/天</div>
+                            <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:4px" data-i18n="d_s03_desc1">直推越多，代数越深，收益无上限</div>
+                            <div style="color:#ff4444;font-size:11px;font-weight:600" data-i18n="d_s03_cost">铸币成本：1 USDT/天</div>
                         </div>
 
                         <div style="background:#111;border:1px solid #2a2a2a;border-radius:12px;padding:14px 16px;">
                             <div style="margin-bottom:8px">
-                                <div style="color:#b0e800;font-size:13px;font-weight:700;margin-bottom:4px">11% 直推奖</div>
-                                <div style="color:var(--text-secondary);font-size:11px">= 拿直推用户铸币量的 11%</div>
+                                <div style="color:#b0e800;font-size:13px;font-weight:700;margin-bottom:4px" data-i18n="d_s03_direct_title">11% 直推奖</div>
+                                <div style="color:var(--text-secondary);font-size:11px" data-i18n="d_s03_direct_desc">= 拿直推用户铸币量的 11%</div>
                             </div>
 
                             <div style="border-top:1px solid #2a2a2a;padding-top:8px;margin-bottom:8px">
-                                <div style="color:#ffcc00;font-size:13px;font-weight:700;margin-bottom:4px">55% 联级留存</div>
-                                <div style="color:var(--text-secondary);font-size:11px">= 每一代收益为上一代的 55%</div>
+                                <div style="color:#ffcc00;font-size:13px;font-weight:700;margin-bottom:4px" data-i18n="d_s03_cascade_title">55% 联级留存</div>
+                                <div style="color:var(--text-secondary);font-size:11px" data-i18n="d_s03_cascade_desc">= 每一代收益为上一代的 55%</div>
                             </div>
 
                             <div style="border-top:1px solid #2a2a2a;padding-top:12px;">
-                                <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:6px">联级奖公式</div>
-                                <div style="color:#b0e800;font-size:13px;font-weight:700;text-align:center;font-family:'Courier New',monospace;white-space:nowrap;margin-bottom:6px;">
+                                <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:6px" data-i18n="d_s03_formula_title">联级奖公式</div>
+                                <div style="color:#b0e800;font-size:13px;font-weight:700;text-align:center;font-family:'Courier New',monospace;white-space:nowrap;margin-bottom:6px;" data-i18n="d_s03_formula">
                                     N 代收益 = 铸币数 × 11% × 55%<sup style="font-size:10px;margin-left:1px">(n-1)</sup>
                                 </div>
-                                <div style="color:var(--text-secondary);font-size:12px;line-height:1.6">说明：每延伸一代，收益按上一代的 55% 留存，推广无上限，可拿所有层级奖励。</div>
+                                <div style="color:var(--text-secondary);font-size:12px;line-height:1.6" data-i18n="d_s03_formula_note">说明：每延伸一代，收益按上一代的 55% 留存，推广无上限，可拿所有层级奖励。</div>
                             </div>
                         </div>
                     </div>
@@ -1928,7 +1928,7 @@
                     <div class="section-header">
                         <div class="section-num">04</div>
                         <div>
-                            <div class="section-title">裂变算法·七代爆发</div>
+                            <div class="section-title" data-i18n="d_s04_title">裂变算法·七代爆发</div>
                             <div class="section-subtitle">GEN 4→7</div>
                         </div>
                     </div>
@@ -1937,14 +1937,14 @@
                         <!-- 顶部说明 -->
                         <div style="text-align:center;margin-bottom:16px;">
                             <div style="font-size:20px;margin-bottom:6px;color:#b0e800;font-weight:800;">∞</div>
-                            <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:4px;">每代裂变 ×3 · 第 4-7 代依次延伸扩张</div>
-                            <div style="color:var(--text-secondary);font-size:10px;">铸币成本：1 USDT/天 · 30 USDT/月</div>
+                            <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:4px;" data-i18n="d_s04_desc">每代裂变 ×3 · 第 4-7 代依次延伸扩张</div>
+                            <div style="color:var(--text-secondary);font-size:10px;" data-i18n="d_s04_cost">铸币成本：1 USDT/天 · 30 USDT/月</div>
                         </div>
 
                         <!-- 前提提示 -->
                         <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;padding:8px 10px;background:#1a1a0a;border-radius:8px;">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                            <span style="color:#ffcc00;font-size:10px;">前提：填满3层 1,110 活跃用户解锁下方</span>
+                            <span style="color:#ffcc00;font-size:10px;" data-i18n="d_s04_prereq">前提：填满3层 1,110 活跃用户解锁下方</span>
                         </div>
 
                         <!-- 四代延伸卡片 -->
@@ -1955,7 +1955,7 @@
                                 </div>
                                 <div>
                                     <div style="color:#fff;font-size:11px;font-weight:700;margin-bottom:2px;">Day 37</div>
-                                    <div style="color:var(--text-secondary);font-size:9px;">四代延伸完毕</div>
+                                    <div style="color:var(--text-secondary);font-size:9px;" data-i18n="d_s04_gen4">四代延伸完毕</div>
                                 </div>
                             </div>
                             <span style="font-size:18px;font-weight:800;color:#00b0ff;">~40 USDT</span>
@@ -1969,7 +1969,7 @@
                                 </div>
                                 <div>
                                     <div style="color:#fff;font-size:11px;font-weight:700;margin-bottom:2px;">Day 44</div>
-                                    <div style="color:var(--text-secondary);font-size:9px;">五代延伸完毕</div>
+                                    <div style="color:var(--text-secondary);font-size:9px;" data-i18n="d_s04_gen5">五代延伸完毕</div>
                                 </div>
                             </div>
                             <span style="font-size:18px;font-weight:800;color:#a66ffe;">~70 USDT</span>
@@ -1983,7 +1983,7 @@
                                 </div>
                                 <div>
                                     <div style="color:#fff;font-size:11px;font-weight:700;margin-bottom:2px;">Day 51</div>
-                                    <div style="color:var(--text-secondary);font-size:9px;">六代延伸完毕</div>
+                                    <div style="color:var(--text-secondary);font-size:9px;" data-i18n="d_s04_gen6">六代延伸完毕</div>
                                 </div>
                             </div>
                             <span style="font-size:18px;font-weight:800;color:#ffcc00;">~127 USDT</span>
@@ -1997,7 +1997,7 @@
                                 </div>
                                 <div>
                                     <div style="color:#fff;font-size:11px;font-weight:700;margin-bottom:2px;">Day 60</div>
-                                    <div style="color:var(--text-secondary);font-size:9px;">七代延伸完毕</div>
+                                    <div style="color:var(--text-secondary);font-size:9px;" data-i18n="d_s04_gen7">七代延伸完毕</div>
                                 </div>
                             </div>
                             <span style="font-size:18px;font-weight:800;color:#b0e800;">~249 USDT</span>
@@ -2006,8 +2006,8 @@
                         <!-- 铸币成本 -->
                         <div style="border-top:1px solid #2a2a2a;padding-top:10px;display:flex;align-items:center;gap:8px;">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ff4444" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                            <span style="color:#fff;font-size:11px;font-weight:500;">铸币成本</span>
-                            <span style="margin-left:auto;color:#ff4444;font-size:12px;font-weight:700;">1 USDT/天</span>
+                            <span style="color:#fff;font-size:11px;font-weight:500;" data-i18n="d_s04_mint_cost">铸币成本</span>
+                            <span style="margin-left:auto;color:#ff4444;font-size:12px;font-weight:700;" data-i18n="d_s04_cost_val">1 USDT/天</span>
                         </div>
                     </div>
                 </div>
@@ -2017,7 +2017,7 @@
                     <div class="section-header">
                         <div class="section-num">05</div>
                         <div>
-                            <div class="section-title">WGU 收益演示</div>
+                            <div class="section-title" data-i18n="d_s05_title">WGU 收益演示</div>
                             <div class="section-subtitle">WGU YIELD DEMONSTRATION</div>
                         </div>
                     </div>
@@ -2070,7 +2070,7 @@
                             <text x="272.5" y="155.8" fill="#b0e800" font-size="11" font-weight="bold" text-anchor="middle">55</text>
                             <text x="272.5" y="238" fill="var(--text-secondary)" font-size="10" text-anchor="middle">90d</text>
                         </svg>
-                        <div style="text-align:center;color:rgba(255,255,255,0.3);font-size:9px;margin-top:4px">USDT/天</div>
+                        <div style="text-align:center;color:rgba(255,255,255,0.3);font-size:9px;margin-top:4px" data-i18n="chart_usdt_day1">USDT/天</div>
                     </div>
                     
                     <!-- 路径二：四至七代爆发（放大版） -->
@@ -2141,7 +2141,7 @@
                             <text x="272.5" y="40.7" fill="#b0e800" font-size="16" font-weight="bold" text-anchor="middle">249</text>
                             <text x="272.5" y="238" fill="var(--text-secondary)" font-size="11" text-anchor="middle">60d</text>
                         </svg>
-                        <div style="text-align:center;color:rgba(255,204,0,0.4);font-size:10px;margin-top:4px;font-weight:500">USDT/天</div>
+                        <div style="text-align:center;color:rgba(255,204,0,0.4);font-size:10px;margin-top:4px;font-weight:500" data-i18n="chart_usdt_day2">USDT/天</div>
                     </div>
                     
                     <!-- Module 06 - DP 数字股权权益 -->
@@ -2149,7 +2149,7 @@
                     <div class="section-header">
                         <div class="section-num">06</div>
                         <div>
-                            <div class="section-title">DP 数字股权权益</div>
+                            <div class="section-title" data-i18n="d_s06_title">DP 数字股权权益</div>
                             <div class="section-subtitle">DP RIGHTS · GAS FEE DIVIDENDS FOREVER</div>
                         </div>
                     </div>
@@ -2157,15 +2157,15 @@
                     <div class="dp-info-card">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00b0ff" stroke-width="2"><polyline points="20 12 10 18 4 6 20 12"/><line x1="20" y1="6" x2="20" y2="18"/><line x1="4" y1="6" x2="4" y2="18"/></svg>
-                            <span style="color:#fff;font-size:13px;font-weight:500">DP 获取</span>
+                            <span style="color:#fff;font-size:13px;font-weight:500" data-i18n="d_s06_dp_get">DP 获取</span>
                         </div>
-                        <p style="color:var(--text-secondary);font-size:10px;line-height:1.4;padding-left:24px">首批 100 万地址空投 1,000 DP/人；此后仅可通过燃烧 WGU 获取</p>
+                        <p style="color:var(--text-secondary);font-size:10px;line-height:1.4;padding-left:24px" data-i18n="d_s06_dp_get_desc">首批 100 万地址空投 1,000 DP/人；此后仅可通过燃烧 WGU 获取</p>
                     </div>
                     <div class="gas-card">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                         <div>
-                            <span style="color:#fff;font-size:13px;font-weight:500;display:block">永久Gas分红</span>
-                            <span style="color:var(--text-secondary);font-size:10px">持有 DP 按比例分享全网 Gas 费</span>
+                            <span style="color:#fff;font-size:13px;font-weight:500;display:block" data-i18n="d_s06_gas_title">永久Gas分红</span>
+                            <span style="color:var(--text-secondary);font-size:10px" data-i18n="d_s06_gas_desc">持有 DP 按比例分享全网 Gas 费</span>
                         </div>
                     
                                     </div>
@@ -2174,37 +2174,37 @@
                 <!-- CTA -->
                 <div class="cta-wrapper">
                     <div class="cta-card">
-                        <h3 class="cta-title">开始铸币 · 抢占名额</h3>
-                        <button class="cta-btn">开始铸币</button>
+                        <h3 class="cta-title" data-i18n="cta_title">开始铸币 · 抢占名额</h3>
+                        <button class="cta-btn" data-i18n="cta_btn">开始铸币</button>
                     </div>
                 </div>
                 
                 <!-- 收益对比 -->
                 <div class="comparison-wrapper">
-                    <h2 class="comparison-title">收益对比</h2>
+                    <h2 class="comparison-title" data-i18n="comp_title">收益对比</h2>
                     <div class="comparison-table">
                         <div class="comparison-header">
-                            <span>模式</span>
-                            <span>日投入</span>
-                            <span>日收益</span>
+                            <span data-i18n="comp_mode">模式</span>
+                            <span data-i18n="comp_daily_in">日投入</span>
+                            <span data-i18n="comp_daily_out">日收益</span>
                         </div>
                         <div class="comparison-row">
-                            <span style="color:#fff;font-size:11px;font-weight:500">单人静态</span>
+                            <span style="color:#fff;font-size:11px;font-weight:500" data-i18n="comp_row1">单人静态</span>
                             <span style="color:var(--text-tertiary);font-size:11px;text-align:center">1 USDT</span>
                             <span style="color:#b0e800;font-size:11px;font-weight:600;text-align:right">1.3 USDT</span>
                         </div>
                         <div class="comparison-row">
-                            <span style="color:#fff;font-size:11px;font-weight:500">1推10静态</span>
+                            <span style="color:#fff;font-size:11px;font-weight:500" data-i18n="comp_row2">1推10静态</span>
                             <span style="color:var(--text-tertiary);font-size:11px;text-align:center">11 USDT</span>
                             <span style="color:#b0e800;font-size:11px;font-weight:600;text-align:right">16.5 USDT</span>
                         </div>
                         <div class="comparison-row highlight">
-                            <span style="color:#fff;font-size:11px;font-weight:500">动态基础（90天）</span>
+                            <span style="color:#fff;font-size:11px;font-weight:500" data-i18n="comp_row3">动态基础（90天）</span>
                             <span style="color:var(--text-tertiary);font-size:11px;text-align:center">1 USDT</span>
                             <span style="color:#b0e800;font-size:11px;font-weight:600;text-align:right">~55 USDT</span>
                         </div>
                         <div class="comparison-row">
-                            <span style="color:#fff;font-size:11px;font-weight:500">七代裂变（60天）</span>
+                            <span style="color:#fff;font-size:11px;font-weight:500" data-i18n="comp_row4">七代裂变（60天）</span>
                             <span style="color:var(--text-tertiary);font-size:11px;text-align:center">1 USDT</span>
                             <span style="color:#b0e800;font-size:11px;font-weight:600;text-align:right">~249 USDT</span>
                         </div>
@@ -2215,14 +2215,14 @@
                     <div class="section-header">
                         <div class="section-num">07</div>
                         <div>
-                            <div class="section-title">活跃节点权益</div>
+                            <div class="section-title" data-i18n="d_s07_title">活跃节点权益</div>
                             <div class="section-subtitle">NODE INCENTIVE LADDER</div>
                         </div>
                     </div>
                     <div class="node-card">
                         <div class="node-left">
-                            <div class="node-count" style="color:#b0e800">1,000 节点</div>
-                            <div class="node-desc">入门（仅限100份）</div>
+                            <div class="node-count" style="color:#b0e800" data-i18n="node_count_1k">1,000 节点</div>
+                            <div class="node-desc" data-i18n="node_starter">入门（仅限100份）</div>
                         </div>
                         <div class="node-right">
                             <span class="node-reward">iPhone 17 Pro</span>
@@ -2230,8 +2230,8 @@
                     </div>
                     <div class="node-card">
                         <div class="node-left">
-                            <div class="node-count" style="color:#fff">10,000 节点</div>
-                            <div class="node-desc">核心（仅限20份）</div>
+                            <div class="node-count" style="color:#fff" data-i18n="node_count_10k">10,000 节点</div>
+                            <div class="node-desc" data-i18n="node_core">核心（仅限20份）</div>
                         </div>
                         <div class="node-right">
                             <span class="node-reward">Rolex Datejust</span>
@@ -2239,17 +2239,17 @@
                     </div>
                     <div class="node-card">
                         <div class="node-left">
-                            <div class="node-count" style="color:#fff">100,000 节点</div>
-                            <div class="node-desc">精英（仅限5份）</div>
+                            <div class="node-count" style="color:#fff" data-i18n="node_count_100k">100,000 节点</div>
+                            <div class="node-desc" data-i18n="node_elite">精英（仅限5份）</div>
                         </div>
                         <div class="node-right">
-                            <span class="node-reward">BMW 7 系</span>
+                            <span class="node-reward" data-i18n="node_reward_elite">BMW 7 系</span>
                         </div>
                     </div>
                     <div class="node-card">
                         <div class="node-left">
-                            <div class="node-count" style="color:#fff">500,000 节点</div>
-                            <div class="node-desc">创世（仅限3份）</div>
+                            <div class="node-count" style="color:#fff" data-i18n="node_count_500k">500,000 节点</div>
+                            <div class="node-desc" data-i18n="node_genesis">创世（仅限3份）</div>
                         </div>
                         <div class="node-right">
                             <span class="node-reward">Maybach</span>
@@ -2257,8 +2257,8 @@
                     </div>
                     <div class="node-card">
                         <div class="node-left">
-                            <div class="node-count" style="color:#ff6666">1,000,000 节点</div>
-                            <div class="node-desc">传奇（仅限1份）</div>
+                            <div class="node-count" style="color:#ff6666" data-i18n="node_count_1m">1,000,000 节点</div>
+                            <div class="node-desc" data-i18n="node_legend">传奇（仅限1份）</div>
                         </div>
                         <div class="node-right">
                             <span class="node-reward" style="color:#fff">Ferrari</span>
@@ -2299,74 +2299,224 @@
         
         let currentMode = 'static';
         let currentLang = 'zh';
-        
-        // All text content by mode and language
-        const text = {
-          static: {
-            zh: {
-              title: '三步开启铸造之旅',
-              subtitle: '低门槛稳定收益',
-              stat1: '14 WGU',
-              label1: '每日产出',
-              stat2: '35天',
-              label2: '养成周期',
-              stat3: '1000 DP',
-              label3: '周期累计',
-              footer: '活动最终解释权归 BitDot 官方所有'
-            },
-            en: {
-              title: 'Three Steps to Start Minting',
-              subtitle: 'Low Barrier, Stable Yield',
-              stat1: '14 WGU',
-              label1: 'Daily Output',
-              stat2: '35 Days',
-              label2: 'Cycle',
-              stat3: '1000 DP',
-              label3: 'Total Accumulated',
-              footer: 'All rights reserved by BitDot Protocol'
-            }
-          },
-          dynamic: {
-            zh: {
-              title: '四大收益引擎',
-              subtitle: '静态·裂变·分红·复利——多维度收益',
-              stat1: '1U',
-              label1: '启动成本',
-              stat2: '30%',
-              label2: '日ROI',
-              stat3: '249U+',
-              label3: '七代日收益',
-              footer: 'All rights reserved by BitDot Protocol',
-              path1Title: '路径一 · 三层静态收益',
-              path2Title: '路径二 · 四至七代爆发',
-              section3Title: '推广裂变 · 管道收益',
-              section3Subtitle: 'REFERRAL NETWORK · PIPELINE REWARDS'
-            },
-            en: {
-              title: 'Four Yield Engines',
-              subtitle: 'Static · Fission · Dividend · Compound — Multi-Dimensional Gains',
-              stat1: '1 USDT',
-              label1: 'Startup Cost',
-              stat2: '30%',
-              label2: 'Daily ROI',
-              stat3: '249U+',
-              label3: 'Gen-7 Daily',
-              footer: 'All rights reserved by BitDot Protocol',
-              path1Title: 'Path 1 · Three-Layer Static Yield',
-              path2Title: 'Path 2 · Gen 4-7 Explosion',
-              section3Title: 'Promotion Fission · Pipeline Yield',
-              section3Subtitle: 'REFERRAL NETWORK · PIPELINE REWARDS'
-            }
-          }
+
+        // =============================================
+        // Complete i18n Dictionary
+        // =============================================
+        const i18n = {
+            // ---- Common / Mode Tabs ----
+            tab_static:             { zh: '静态模式',           en: 'Static' },
+            tab_dynamic:            { zh: '动态模式',           en: 'Dynamic' },
+
+            // ---- Static Section 01: 从你开始 ----
+            s01_title:              { zh: '从你开始',           en: 'Starts With You' },
+            step1_title:            { zh: '注册绑定',           en: 'Sign Up & Bind' },
+            step1_desc:             { zh: '完成注册绑定，立即领取空投奖励', en: 'Complete registration to claim your airdrop reward' },
+            step1_badge:            { zh: '1000 DP 空投',       en: '1,000 DP Airdrop' },
+            step2_title:            { zh: '每日 1U 铸币',       en: 'Daily 1U Minting' },
+            step2_desc:             { zh: '每日投入 1U 进行铸币，当日双重产出', en: 'Invest 1 USDT daily to mint and earn dual output' },
+            step2_badge:            { zh: '14 WGU + 5 DP / 天', en: '14 WGU + 5 DP / Day' },
+            step3_title:            { zh: '连续 35 天养成 · 释放加成达 3%', en: '35-Day Staking · Release Bonus Up to 3%' },
+            step3_desc:             { zh: '可以选择提币随时闪兑 USDT', en: 'Withdraw and swap to USDT anytime' },
+            step3_badge:            { zh: '随时提现 USDT',      en: 'Cash Out USDT Anytime' },
+
+            // ---- Static Section 02: 铸币数据 ----
+            s02_title:              { zh: '铸币数据',           en: 'Minting Data' },
+            data_label1:            { zh: '35天 周期累计',      en: '35-Day Cycle Total' },
+            data_label2:            { zh: '释放规则',           en: 'Release Rate' },
+            progress_label:         { zh: '35天 养成周期',      en: '35-Day Staking Cycle' },
+            progress_desc:          { zh: '可以选择提币随时闪兑 USDT', en: 'Withdraw and swap to USDT anytime' },
+            btn_swap_want:          { zh: '闪兑 WANT',          en: 'Swap to WANT' },
+            btn_swap_dp:            { zh: '换 DP',              en: 'Swap to DP' },
+            btn_lp:                 { zh: '组 LP',              en: 'Provide LP' },
+            btn_swap_usdt:          { zh: '闪兑 USDT',          en: 'Swap to USDT' },
+            btn_ucard:              { zh: 'U卡手续费',          en: 'Card Fee' },
+
+            // ---- Static Output Section ----
+            output_title:           { zh: '核心产出数据',       en: 'Core Output' },
+            out_label1:             { zh: 'WGU/天',             en: 'WGU / Day' },
+            out_label2:             { zh: 'WGU/35天',           en: 'WGU / 35 Days' },
+            out_label3:             { zh: '每日释放',           en: 'Daily Release' },
+            table_header:           { zh: '项目养成数据',       en: 'Staking Data' },
+            table_header_data:      { zh: '数据',              en: 'Value' },
+            row_mint:               { zh: '每日铸币',           en: 'Daily Mint' },
+            row_output:             { zh: '每日产出',           en: 'Daily Output' },
+            row_total:              { zh: '35天 周期累计',      en: '35-Day Total' },
+            row_release:            { zh: '释放规则',           en: 'Release Rate' },
+            row_usage:              { zh: '用途',              en: 'Use Cases' },
+
+            // ---- Static Section 03: Referral ----
+            s03_title:              { zh: '1推10静/动态模型',   en: '1-to-10 Static / Dynamic Model' },
+            matrix_desc:            { zh: '十十复制 1U 铸币逻辑', en: '10×10 Replication · 1U Minting Logic' },
+            direct_ref:             { zh: '直推',              en: 'Direct Ref' },
+            reward_direct:          { zh: '直推奖励',           en: 'Direct Referral Reward' },
+            reward_self:            { zh: '自己铸币累计',       en: 'Self-Minting Total' },
+            reward_structure:       { zh: '收益结构',           en: 'Yield Structure' },
+
+            // ---- Static Section 04: Rights ----
+            s04_title:              { zh: '权益说明',           en: 'Token Utilities' },
+            right_swap:             { zh: '直接闪兑',           en: 'Instant Swap' },
+            right_burn:             { zh: '通缩销毁机制',       en: 'Deflationary Burn' },
+            right_burn_desc:        { zh: '总量持续减少，供应长期收紧', en: 'Fixed supply — continuous burn reduces total over time' },
+            right_dividend:         { zh: '参与全网分红',       en: 'Network-Wide Dividends' },
+            right_dividend_desc:    { zh: '全网 Gas 收益按比例分配给 DP 持有者', en: 'Network gas fees distributed proportionally to DP holders' },
+
+            // ---- Dynamic Module 01: 三步上手 ----
+            d_s01_title:            { zh: '怎么玩？三步上手',   en: 'How to Play? 3 Simple Steps' },
+            d_step1_title:          { zh: '每日 1U 铸币',       en: 'Daily 1U Minting' },
+            d_step1_desc:           { zh: '获得 14 WGU + 5 DP，连续加成叠加', en: 'Earn 14 WGU + 5 DP per day, stacking bonuses' },
+            d_step1_badge:          { zh: '14 WGU + 5 DP / 天', en: '14 WGU + 5 DP / Day' },
+            d_step2_title:          { zh: '邀请裂变',           en: 'Invite & Scale' },
+            d_step2_desc:           { zh: '直推 11%，逐级 55% 递减', en: '11% direct referral, 55% decay per generation' },
+            d_step2_badge:          { zh: '无限深度',           en: 'Unlimited Depth' },
+            d_step3_title:          { zh: '持有 DP 享 Gas 分红', en: 'Hold DP, Earn Gas Dividends' },
+            d_step3_desc:           { zh: 'DP 总量固定，Gas 费永久分配', en: 'Fixed DP supply — gas fees distributed forever' },
+            d_step3_badge:          { zh: '开启财富新篇章',     en: 'Unlock Your Wealth Journey' },
+
+            // ---- Dynamic Module 02: 铸币引擎 ----
+            d_s02_title:            { zh: '铸币引擎',           en: 'Minting Engine' },
+            io_gas:                 { zh: '+ Gas 费',           en: '+ Gas Fee' },
+            bonus_consecutive:      { zh: '连续铸币',           en: 'Consecutive Mint' },
+            bonus_referral:         { zh: '动态推广',           en: 'Referral Bonus' },
+            bonus_cap:              { zh: '封顶线',             en: 'Cap' },
+            bonus_penalty:          { zh: '断签惩罚',           en: 'Missed Day Penalty' },
+            chart_net_yield:        { zh: '净收益增长',         en: 'Net Yield Growth' },
+            chart_prereq:           { zh: '基于 10×10 复制填满 1,110 活跃地址', en: 'Based on 10×10 matrix — 1,110 active addresses filled' },
+            chart_day30:            { zh: '30天',              en: '30 Days' },
+            chart_day40:            { zh: '40天',              en: '40 Days' },
+            chart_day60:            { zh: '60天',              en: '60 Days' },
+            chart_day90:            { zh: '90天',              en: '90 Days' },
+            progress_value:         { zh: '35 / 35 天',        en: '35 / 35 Days' },
+
+            // ---- Dynamic Module 03: 推广裂变 ----
+            section3Title:          { zh: '推广裂变 · 管道收益', en: 'Referral Network · Pipeline Rewards' },
+            section3Subtitle:       { zh: 'REFERRAL NETWORK · PIPELINE REWARDS', en: 'REFERRAL NETWORK · PIPELINE REWARDS' },
+            d_s03_desc1:            { zh: '直推越多，代数越深，收益无上限', en: 'More referrals, deeper generations — unlimited upside' },
+            d_s03_cost:             { zh: '铸币成本：1 USDT/天', en: 'Minting Cost: 1 USDT / Day' },
+            d_s03_direct_title:     { zh: '11% 直推奖',         en: '11% Direct Referral Bonus' },
+            d_s03_direct_desc:      { zh: '= 拿直推用户铸币量的 11%', en: '= 11% of each direct referral\'s minting volume' },
+            d_s03_cascade_title:    { zh: '55% 联级留存',       en: '55% Cascade Retention' },
+            d_s03_cascade_desc:     { zh: '= 每一代收益为上一代的 55%', en: '= Each generation earns 55% of the previous' },
+            d_s03_formula_title:    { zh: '联级奖公式',         en: 'Cascade Reward Formula' },
+            d_s03_formula_note:     { zh: '说明：每延伸一代，收益按上一代的 55% 留存，推广无上限，可拿所有层级奖励。', en: 'Note: Each deeper generation retains 55% of the previous yield. No limit on referrals — earn from every tier.' },
+            d_s03_formula:          { zh: 'N 代收益 = 铸币数 × 11% × 55%^(n-1)', en: 'Gen N Yield = Mints × 11% × 55%^(n-1)' },
+
+            // ---- Dynamic Module 04: 七代爆发 ----
+            d_s04_title:            { zh: '裂变算法·七代爆发',  en: 'Fission Algorithm · Gen 4-7 Explosion' },
+            d_s04_desc:             { zh: '每代裂变 ×3 · 第 4-7 代依次延伸扩张', en: '×3 Fission per Gen · Gen 4–7 Sequential Expansion' },
+            d_s04_cost:             { zh: '铸币成本：1 USDT/天 · 30 USDT/月', en: 'Minting Cost: 1 USDT/day · 30 USDT/month' },
+            d_s04_prereq:           { zh: '前提：填满3层 1,110 活跃用户解锁下方', en: 'Prerequisite: Fill 3 layers (1,110 active users) to unlock below' },
+            d_s04_gen4:             { zh: '四代延伸完毕',       en: 'Gen 4 Complete' },
+            d_s04_gen5:             { zh: '五代延伸完毕',       en: 'Gen 5 Complete' },
+            d_s04_gen6:             { zh: '六代延伸完毕',       en: 'Gen 6 Complete' },
+            d_s04_gen7:             { zh: '七代延伸完毕',       en: 'Gen 7 Complete' },
+            d_s04_mint_cost:        { zh: '铸币成本',           en: 'Minting Cost' },
+            d_s04_cost_val:         { zh: '1 USDT/天',          en: '1 USDT / Day' },
+
+            // ---- Dynamic Module 05: WGU 收益演示 ----
+            d_s05_title:            { zh: 'WGU 收益演示',       en: 'WGU Yield Projection' },
+            chart_usdt_day1:        { zh: 'USDT/天',            en: 'USDT / Day' },
+            path1Title:             { zh: '路径一 · 三层静态收益', en: 'Path 1 · Three-Layer Static Yield' },
+            path2Title:             { zh: '路径二 · 四至七代爆发', en: 'Path 2 · Gen 4–7 Explosion' },
+            chart_usdt_day2:        { zh: 'USDT/天',            en: 'USDT / Day' },
+
+            // ---- Dynamic Module 06: DP 数字股权权益 ----
+            d_s06_title:            { zh: 'DP 数字股权权益',    en: 'DP Digital Equity Rights' },
+            d_s06_dp_get:           { zh: 'DP 获取',            en: 'How to Get DP' },
+            d_s06_dp_get_desc:      { zh: '首批 100 万地址空投 1,000 DP/人；此后仅可通过燃烧 WGU 获取', en: 'First 1M addresses receive 1,000 DP airdrop each; after that, only obtainable by burning WGU' },
+            d_s06_gas_title:        { zh: '永久Gas分红',        en: 'Permanent Gas Dividends' },
+            d_s06_gas_desc:         { zh: '持有 DP 按比例分享全网 Gas 费', en: 'Hold DP to share network gas fees proportionally' },
+
+            // ---- CTA ----
+            cta_title:              { zh: '开始铸币 · 抢占名额', en: 'Start Minting · Secure Your Spot' },
+            cta_btn:                { zh: '开始铸币',           en: 'Start Minting' },
+
+            // ---- Comparison Table ----
+            comp_title:             { zh: '收益对比',           en: 'Yield Comparison' },
+            comp_mode:              { zh: '模式',              en: 'Mode' },
+            comp_daily_in:          { zh: '日投入',             en: 'Daily Input' },
+            comp_daily_out:         { zh: '日收益',             en: 'Daily Yield' },
+            comp_row1:              { zh: '单人静态',           en: 'Solo Static' },
+            comp_row2:              { zh: '1推10静态',          en: '1-to-10 Static' },
+            comp_row3:              { zh: '动态基础（90天）',    en: 'Dynamic Base (90 Days)' },
+            comp_row4:              { zh: '七代裂变（60天）',    en: 'Gen 7 Fission (60 Days)' },
+
+            // ---- Module 07: Node Incentives ----
+            d_s07_title:            { zh: '活跃节点权益',       en: 'Active Node Incentives' },
+            node_count_1k:          { zh: '1,000 节点',        en: '1,000 Nodes' },
+            node_starter:           { zh: '入门（仅限100份）',   en: 'Starter (100 Only)' },
+            node_count_10k:         { zh: '10,000 节点',       en: '10,000 Nodes' },
+            node_core:              { zh: '核心（仅限20份）',    en: 'Core (20 Only)' },
+            node_count_100k:        { zh: '100,000 节点',      en: '100,000 Nodes' },
+            node_elite:             { zh: '精英（仅限5份）',     en: 'Elite (5 Only)' },
+            node_reward_elite:      { zh: 'BMW 7 系',          en: 'BMW 7 Series' },
+            node_count_500k:        { zh: '500,000 节点',      en: '500,000 Nodes' },
+            node_genesis:           { zh: '创世（仅限3份）',     en: 'Genesis (3 Only)' },
+            node_count_1m:          { zh: '1,000,000 节点',    en: '1,000,000 Nodes' },
+            node_legend:            { zh: '传奇（仅限1份）',     en: 'Legendary (1 Only)' },
+
+            // ---- Footer ----
+            footerText:             { zh: '活动最终解释权归 BitDot 官方所有', en: 'All rights reserved by BitDot Protocol' }
         };
-        
+
+        // Mode-specific overrides (title, subtitle, stats)
+        const modeText = {
+            static: {
+                zh: {
+                    mainTitle: '三步开启铸造之旅',
+                    mainSubtitle: '低门槛稳定收益',
+                    stat1: '14 WGU',
+                    label1: '每日产出',
+                    stat2: '35天',
+                    label2: '养成周期',
+                    stat3: '1000 DP',
+                    label3: '周期累计'
+                },
+                en: {
+                    mainTitle: 'Three Steps to Start Minting',
+                    mainSubtitle: 'Low Barrier, Stable Yield',
+                    stat1: '14 WGU',
+                    label1: 'Daily Output',
+                    stat2: '35 Days',
+                    label2: 'Cycle',
+                    stat3: '1,000 DP',
+                    label3: 'Total Accumulated'
+                }
+            },
+            dynamic: {
+                zh: {
+                    mainTitle: '四大收益引擎',
+                    mainSubtitle: '静态·裂变·分红·复利——多维度收益',
+                    stat1: '1U',
+                    label1: '启动成本',
+                    stat2: '30%',
+                    label2: '日ROI',
+                    stat3: '249U+',
+                    label3: '七代日收益'
+                },
+                en: {
+                    mainTitle: 'Four Yield Engines',
+                    mainSubtitle: 'Static · Fission · Dividend · Compound — Multi-Dimensional Gains',
+                    stat1: '1 USDT',
+                    label1: 'Startup Cost',
+                    stat2: '30%',
+                    label2: 'Daily ROI',
+                    stat3: '249U+',
+                    label3: 'Gen-7 Daily'
+                }
+            }
+        };
+
+        // =============================================
+        // Core Functions
+        // =============================================
         function switchMode(mode) {
             currentMode = mode;
             const tabStatic = document.getElementById('tabStatic');
             const tabDynamic = document.getElementById('tabDynamic');
             const staticContent = document.getElementById('staticContent');
             const dynamicContent = document.getElementById('dynamicContent');
-            
+
             if (mode === 'static') {
                 tabStatic.className = 'mode-tab active';
                 tabDynamic.className = 'mode-tab inactive';
@@ -2378,40 +2528,36 @@
                 staticContent.style.display = 'none';
                 dynamicContent.style.display = 'block';
             }
-            
+
             updateText();
         }
-        
+
         function toggleLang() {
             currentLang = currentLang === 'zh' ? 'en' : 'zh';
-            const langText = document.getElementById('langText');
-            langText.textContent = currentLang === 'zh' ? 'EN' : '中';
+            document.getElementById('langText').textContent = currentLang === 'zh' ? 'EN' : '中';
+            document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
             updateText();
         }
-        
+
         function updateText() {
-            const t = text[currentMode][currentLang];
-            document.getElementById('mainTitle').textContent = t.title;
-            document.getElementById('mainSubtitle').textContent = t.subtitle;
-            document.getElementById('statValue1').textContent = t.stat1;
-            document.getElementById('statLabel1').textContent = t.label1;
-            document.getElementById('statValue2').textContent = t.stat2;
-            document.getElementById('statLabel2').textContent = t.label2;
-            document.getElementById('statValue3').textContent = t.stat3;
-            document.getElementById('statLabel3').textContent = t.label3;
-            document.getElementById('footerText').textContent = t.footer;
-            
-            // Update chart labels if elements exist
-            const path1Title = document.getElementById('path1Title');
-            const path2Title = document.getElementById('path2Title');
-            if (path1Title && t.path1Title) path1Title.textContent = t.path1Title;
-            if (path2Title && t.path2Title) path2Title.textContent = t.path2Title;
-            
-            // Update Section 03 title
-            const section3Title = document.getElementById('section3Title');
-            const section3Subtitle = document.getElementById('section3Subtitle');
-            if (section3Title && t.section3Title) section3Title.textContent = t.section3Title;
-            if (section3Subtitle && t.section3Subtitle) section3Subtitle.textContent = t.section3Subtitle;
+            // 1. Update mode-specific header stats
+            const mt = modeText[currentMode][currentLang];
+            document.getElementById('mainTitle').textContent = mt.mainTitle;
+            document.getElementById('mainSubtitle').textContent = mt.mainSubtitle;
+            document.getElementById('statValue1').textContent = mt.stat1;
+            document.getElementById('statLabel1').textContent = mt.label1;
+            document.getElementById('statValue2').textContent = mt.stat2;
+            document.getElementById('statLabel2').textContent = mt.label2;
+            document.getElementById('statValue3').textContent = mt.stat3;
+            document.getElementById('statLabel3').textContent = mt.label3;
+
+            // 2. Update all data-i18n elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[key] && i18n[key][currentLang]) {
+                    el.textContent = i18n[key][currentLang];
+                }
+            });
         }
     </script>
 </body>
