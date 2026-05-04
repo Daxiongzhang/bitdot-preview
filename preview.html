@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITDOT PROTOCOL - Preview</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .phone-frame {
+            width: 375px;
+            max-width: 100%;
+            background: #000;
+            border-radius: 40px;
+            padding: 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            overflow: hidden;
+            position: relative;
+        }
+        .phone-notch {
+            width: 150px;
+            height: 25px;
+            background: #000;
+            border-radius: 0 0 20px 20px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        .phone-content {
+            width: 100%;
+            height: 80vh;
+            max-height: 812px;
+            border: none;
+            border-radius: 40px;
+        }
+        .info {
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .info a {
+            color: #b0e800;
+            text-decoration: none;
+        }
+        @media (max-width: 420px) {
+            body { padding: 0; }
+            .phone-frame { 
+                width: 100%; 
+                height: 100vh;
+                border-radius: 0;
+            }
+            .phone-content { 
+                height: 100vh;
+                border-radius: 0;
+            }
+            .phone-notch { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <iframe 
+                class="phone-content" 
+                src="https://daxiongzhang.github.io/bitdot-preview/bitdot-heiti-final.html?v=6"
+                title="BITDOT PROTOCOL"
+            ></iframe>
+        </div>
+        <div class="info">
+            BITDOT PROTOCOL Preview | 
+            <a href="https://daxiongzhang.github.io/bitdot-preview/bitdot-heiti-final.html?v=6" target="_blank">打开原页面</a>
+        </div>
+    </div>
+</body>
+</html>
