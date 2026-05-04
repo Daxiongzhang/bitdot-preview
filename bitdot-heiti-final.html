@@ -21,8 +21,8 @@
             
             /* 背景色 - 更浅、更透气 */
             --bg-page: #000000;
-            --bg-card: #0a0a0a;
-            --bg-card-hover: #111111;
+            --bg-card: #161616;
+            --bg-card-hover: #1e1e1e;
             --bg-elevated: #151515;
             
             /* 边框 - 极淡 */
@@ -250,9 +250,10 @@
             text-align: center; 
             flex: 1;
         }
-        .stat-value { 
-            font-size: 24px; 
-            font-weight: var(--weight-semibold);
+        .stat-value {
+            font-size: 24px;
+            font-weight: 900 !important;
+            text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor, 0 0.5px 0 currentColor, 0 -0.5px 0 currentColor;
             letter-spacing: -0.02em;
             font-variant-numeric: tabular-nums;
             -webkit-font-feature-settings: "tnum";
@@ -336,18 +337,18 @@
 
         /* === Section Header === */
         .section {
-            padding: 0 var(--space-4) 12px var(--space-4);
+            padding: 0 var(--space-4) 8px var(--space-4);
         }
         .section:last-child { 
-            padding-bottom: var(--space-8); 
+            padding-bottom: var(--space-6); 
         }
         
         .section-header {
             display: flex;
             align-items: center;
             gap: var(--space-3);
-            margin-bottom: var(--space-5);
-            margin-top: var(--space-8);
+            margin-bottom: var(--space-4);
+            margin-top: var(--space-6);
         }
         .section-num {
             width: 32px;
@@ -383,7 +384,7 @@
             background: var(--bg-card);
             border-radius: var(--radius-md);
             padding: var(--space-5);
-            margin-top: var(--space-4);
+            margin-top: 8px;
             display: flex;
             align-items: flex-start;
             gap: var(--space-3);
@@ -751,7 +752,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: var(--space-4);
+            margin-top: 8px;
             transition: background 0.2s ease;
         }
         .reward-card:hover {
@@ -774,7 +775,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
-            margin-top: var(--space-4);
+            margin-top: 8px;
         }
         .func-btn {
             display: flex;
@@ -818,7 +819,7 @@
             background: var(--bg-card);
             border-radius: var(--radius-md);
             padding: var(--space-5);
-            margin-top: var(--space-4);
+            margin-top: 8px;
             transition: background 0.2s ease;
         }
         .rights-card:hover {
@@ -837,7 +838,7 @@
             background: rgba(255,255,255,0.06);
             border-radius: 2px;
             overflow: hidden;
-            margin-top: var(--space-4);
+            margin-top: 8px;
         }
         .rights-progress-fill {
             height: 100%;
@@ -899,7 +900,7 @@
             display: flex;
             background: var(--bg-card);
             border-radius: var(--radius-lg);
-            margin-bottom: var(--space-5);
+            margin-bottom: 8px;
             overflow: visible;
             position: relative;
         }
@@ -913,8 +914,8 @@
             gap: 6px;
             text-align: center;
         }
-        .io-left { background: var(--bg-card); }
-        .io-right { background: rgba(200,255,0,0.04); }
+        .io-left { background: var(--bg-card); border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+        .io-right { background: rgba(200,255,0,0.04); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
         .io-label { font-size: 9px; letter-spacing: 1px; font-weight: 500; color: var(--text-tertiary); }
         .io-value { font-size: var(--text-2xl); font-weight: var(--weight-bold); }
         .io-value { color: var(--text-primary); }
@@ -943,6 +944,7 @@
             border-radius: var(--radius-md);
             overflow: hidden;
             margin-bottom: var(--space-5);
+            background: var(--bg-card);
         }
         .bonus-row {
             display: flex;
@@ -1068,7 +1070,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: var(--space-4);
+            margin-top: 8px;
         }
 
         /* === Path Card === */
@@ -1112,8 +1114,8 @@
             background: var(--bg-card);
             border: 1px solid var(--border-thin);
             border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-4);
+            padding: var(--space-5);
+            margin-bottom: 8px;
         }
 
         /* === Gas Card === */
@@ -1121,20 +1123,20 @@
             background: var(--bg-card);
             border: 1px solid var(--border-thin);
             border-radius: var(--radius-lg);
-            padding: var(--space-6);
+            padding: var(--space-5);
             display: flex;
             align-items: center;
-            gap: var(--space-4);
+            gap: var(--space-3);
         }
 
         /* === CTA Wrapper === */
         .cta-wrapper {
-            margin-top: var(--space-6);
+            margin-top: 8px;
         }
         
         /* === Comparison Wrapper === */
         .comparison-wrapper {
-            margin-top: var(--space-6);
+            margin-top: 8px;
         }
         .comparison-title {
             color: #fff;
@@ -1158,7 +1160,7 @@
         }
         .cta-btn {
             width: 100%;
-            margin-top: var(--space-4);
+            margin-top: 8px;
             padding: 12px;
             border-radius: var(--radius-lg);
             background: #000;
@@ -1209,7 +1211,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: var(--space-4);
+            margin-bottom: 8px;
         }
         .node-left {
             display: flex;
@@ -1229,7 +1231,7 @@
 
         /* === Footer === */
         .footer-section {
-            padding: 0 16px 32px 16px;
+            padding: 0 0 32px 0;
         }
         .footer-warning {
             background: #1a0a0a;
@@ -1787,7 +1789,7 @@
                         <div class="step-content">
                             <div class="step-title">持有 DP 享 Gas 分红</div>
                             <div class="step-desc">DP 总量固定，Gas 费永久分配</div>
-                            <div class="step-badge blue">随时闪兑 USDT</div>
+                            <div class="step-badge blue">开启财富新篇章</div>
                         </div>
                     </div>
                 </div>
@@ -1804,7 +1806,7 @@
                     <div class="io-card">
                         <div class="io-left">
                             <span class="io-label">INPUT</span>
-                            <span class="io-value">1 USDT</span>
+                            <span class="io-value" style="font-weight:700">1 USDT</span>
                             <span class="io-sub" style="color:var(--text-secondary);">+ Gas 费</span>
                         </div>
                         <div class="io-divider">
@@ -1817,7 +1819,7 @@
                         </div>
                         <div class="io-right">
                             <span class="io-label">OUTPUT</span>
-                            <span class="io-value lime">14 WGU</span>
+                            <span class="io-value lime" style="font-weight:700">14 WGU</span>
                             <span class="io-sub" style="color:rgba(176,232,0,0.7);">+ 5 DP</span>
                         </div>
                     </div>
@@ -1892,20 +1894,20 @@
                         </div>
                     </div>
                     
-                    <div style="margin-bottom:16px">
-                        <div style="text-align:center;margin-bottom:16px">
+                    <div style="margin-bottom:8px">
+                        <div style="text-align:center;margin-bottom:8px">
                             <div style="font-size:22px;margin-bottom:6px">🔗</div>
                             <div style="color:#fff;font-size:12px;font-weight:600;margin-bottom:4px">直推越多，代数越深，收益无上限</div>
                             <div style="color:#ff4444;font-size:11px;font-weight:600">铸币成本：1 USDT/天</div>
                         </div>
 
                         <div style="background:#111;border:1px solid #2a2a2a;border-radius:12px;padding:14px 16px;">
-                            <div style="margin-bottom:12px">
+                            <div style="margin-bottom:8px">
                                 <div style="color:#b0e800;font-size:13px;font-weight:700;margin-bottom:4px">11% 直推奖</div>
                                 <div style="color:var(--text-secondary);font-size:11px">= 拿直推用户铸币量的 11%</div>
                             </div>
 
-                            <div style="border-top:1px solid #2a2a2a;padding-top:12px;margin-bottom:12px">
+                            <div style="border-top:1px solid #2a2a2a;padding-top:8px;margin-bottom:8px">
                                 <div style="color:#ffcc00;font-size:13px;font-weight:700;margin-bottom:4px">55% 联级留存</div>
                                 <div style="color:var(--text-secondary);font-size:11px">= 每一代收益为上一代的 55%</div>
                             </div>
@@ -1940,13 +1942,13 @@
                         </div>
 
                         <!-- 前提提示 -->
-                        <div style="display:flex;align-items:center;gap:6px;margin-bottom:14px;padding:8px 10px;background:#1a1a0a;border-radius:8px;">
+                        <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;padding:8px 10px;background:#1a1a0a;border-radius:8px;">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                             <span style="color:#ffcc00;font-size:10px;">前提：填满3层 1,110 活跃用户解锁下方</span>
                         </div>
 
                         <!-- 四代延伸卡片 -->
-                        <div style="background:linear-gradient(135deg, #0a1a2a 0%, #0a2a3a 100%);border:1px solid #1a3a4a;border-radius:12px;padding:14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
+                        <div style="background:linear-gradient(135deg, #0a1a2a 0%, #0a2a3a 100%);border:1px solid #1a3a4a;border-radius:12px;padding:14px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;">
                             <div style="display:flex;align-items:center;gap:12px;">
                                 <div style="width:32px;height:32px;background:rgba(0,176,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00b0ff" stroke-width="2.5"><polyline points="18 15 22 15 22 11"/><polyline points="6 9 2 9 2 13"/><line x1="6" y1="9" x2="18" y2="15"/><line x1="6" y1="15" x2="18" y2="9"/></svg>
@@ -1960,7 +1962,7 @@
                         </div>
 
                         <!-- 五代延伸卡片 -->
-                        <div style="background:linear-gradient(135deg, #1a0a2a 0%, #2a1a3a 100%);border:1px solid #3a1a4a;border-radius:12px;padding:14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
+                        <div style="background:linear-gradient(135deg, #1a0a2a 0%, #2a1a3a 100%);border:1px solid #3a1a4a;border-radius:12px;padding:14px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;">
                             <div style="display:flex;align-items:center;gap:12px;">
                                 <div style="width:32px;height:32px;background:rgba(166,111,254,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a66ffe" stroke-width="2.5"><polyline points="18 15 22 15 22 11"/><polyline points="6 9 2 9 2 13"/><line x1="6" y1="9" x2="18" y2="15"/><line x1="6" y1="15" x2="18" y2="9"/></svg>
@@ -1974,7 +1976,7 @@
                         </div>
 
                         <!-- 六代延伸卡片 -->
-                        <div style="background:linear-gradient(135deg, #2a1a00 0%, #3a2a10 100%);border:1px solid #4a3a20;border-radius:12px;padding:14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
+                        <div style="background:linear-gradient(135deg, #2a1a00 0%, #3a2a10 100%);border:1px solid #4a3a20;border-radius:12px;padding:14px;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between;">
                             <div style="display:flex;align-items:center;gap:12px;">
                                 <div style="width:32px;height:32px;background:rgba(255,204,0,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2.5"><polyline points="18 15 22 15 22 11"/><polyline points="6 9 2 9 2 13"/><line x1="6" y1="9" x2="18" y2="15"/><line x1="6" y1="15" x2="18" y2="9"/></svg>
@@ -1988,7 +1990,7 @@
                         </div>
 
                         <!-- 七代延伸卡片 -->
-                        <div style="background:linear-gradient(135deg, #1a2a10 0%, #2a3a20 100%);border:1px solid #3a4a30;border-radius:12px;padding:14px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;">
+                        <div style="background:linear-gradient(135deg, #1a2a10 0%, #2a3a20 100%);border:1px solid #3a4a30;border-radius:12px;padding:14px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;">
                             <div style="display:flex;align-items:center;gap:12px;">
                                 <div style="width:32px;height:32px;background:rgba(200,255,0,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2.5"><polyline points="18 15 22 15 22 11"/><polyline points="6 9 2 9 2 13"/><line x1="6" y1="9" x2="18" y2="15"/><line x1="6" y1="15" x2="18" y2="9"/></svg>
@@ -2021,8 +2023,8 @@
                     </div>
                     
                     <!-- 路径一：三层静态收益（缩小版） -->
-                    <div style="background:#111;border:1px solid #2a2a2a;border-radius:16px;padding:16px;margin-bottom:12px">
-                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+                    <div style="background:#111;border:1px solid #2a2a2a;border-radius:16px;padding:16px;margin-bottom:8px">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <div style="width:6px;height:6px;border-radius:50%;background:#b0e800"></div>
                             <span style="color:#b0e800;font-size:11px;font-weight:500" id="path1Title">路径一 · 三层静态收益</span>
                         </div>
@@ -2072,8 +2074,8 @@
                     </div>
                     
                     <!-- 路径二：四至七代爆发（放大版） -->
-                    <div style="background:#111;border:1px solid rgba(255,204,0,0.2);border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 0 30px rgba(255,204,0,0.05);">
-                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+                    <div style="background:#111;border:1px solid rgba(255,204,0,0.2);border-radius:16px;padding:16px;margin-bottom:8px;box-shadow:0 0 30px rgba(255,204,0,0.05);">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <div style="width:8px;height:8px;border-radius:50%;background:#ffcc00;box-shadow:0 0 10px rgba(255,204,0,0.8)"></div>
                             <span style="color:#ffcc00;font-size:12px;font-weight:700" id="path2Title">路径二 · 四至七代爆发</span>
                         </div>
@@ -2143,7 +2145,7 @@
                     </div>
                     
                     <!-- Module 06 - DP 数字股权权益 -->
-                    <div class="section">
+                    <div class="section" style="padding:0 0 12px 0;">
                     <div class="section-header">
                         <div class="section-num">06</div>
                         <div>
@@ -2155,14 +2157,14 @@
                     <div class="dp-info-card">
                         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00b0ff" stroke-width="2"><polyline points="20 12 10 18 4 6 20 12"/><line x1="20" y1="6" x2="20" y2="18"/><line x1="4" y1="6" x2="4" y2="18"/></svg>
-                            <span style="color:#fff;font-size:11px;font-weight:500">DP 获取</span>
+                            <span style="color:#fff;font-size:13px;font-weight:500">DP 获取</span>
                         </div>
-                        <p style="color:var(--text-secondary);font-size:10px;line-height:1.4">首批 100 万地址空投 1,000 DP/人；此后仅可通过燃烧 WGU 获取</p>
+                        <p style="color:var(--text-secondary);font-size:10px;line-height:1.4;padding-left:24px">首批 100 万地址空投 1,000 DP/人；此后仅可通过燃烧 WGU 获取</p>
                     </div>
                     <div class="gas-card">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b0e800" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                         <div>
-                            <span style="color:#fff;font-size:13px;font-weight:500;display:block">永久 Gas 分红</span>
+                            <span style="color:#fff;font-size:13px;font-weight:500;display:block">永久Gas分红</span>
                             <span style="color:var(--text-secondary);font-size:10px">持有 DP 按比例分享全网 Gas 费</span>
                         </div>
                     
@@ -2209,7 +2211,7 @@
                     </div>
                 
                 <!-- Module 07 - 活跃节点权益 -->
-                <div class="section">
+                <div class="section" style="padding:0 0 12px 0;">
                     <div class="section-header">
                         <div class="section-num">07</div>
                         <div>
